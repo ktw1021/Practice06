@@ -23,9 +23,10 @@ public class Employee extends User {
 	public void setSalary(int salary) {
 		this.salary=salary;
 	}
-	public void showInfo(String id, String password, String name, int salary) {
-		
-		System.out.printf("#월급: %d",salary);
+	
+	public void showInfo() {
+		super.showInfo(id, password, name);
+		System.out.printf(", #월급: %d%n",salary);
 	}
 	
 	

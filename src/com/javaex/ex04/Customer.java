@@ -23,9 +23,9 @@ public class Customer extends User {
 		this.point=point;
 	}
 	
-	public void showInfo(String id, String password, String name, int point) {
-		
-		System.out.printf("#포인트:%d%n", point);
+	public void showInfo() {
+		super.showInfo(id, password, name);
+		System.out.printf(", #포인트:%d%n", point);
 	}
 	
 

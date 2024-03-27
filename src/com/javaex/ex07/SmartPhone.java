@@ -3,15 +3,20 @@ package com.javaex.ex07;
 public class SmartPhone extends MusicPhone {
     
     public void execute(String str){
-        
-        //코드작성
-        
+        if (str.equals("앱")) {
+        	playApp();
+        }
+        else if (str.equals("음악")) {
+        	super.execute(str);
+        }
+        else if (str.equals("통화")) {
+        	super.execute(str);
+        }
     }
  
-    //메소드작성
-    
-    //메소드작성
-    
+    public void playApp() {
+    	System.out.println("앱 실행");
+    }
     
     
 }
