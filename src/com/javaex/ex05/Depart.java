@@ -1,7 +1,7 @@
 package com.javaex.ex05;
 
 public class Depart extends Employee {
-	protected String department;
+	private String department;
 	
 	public Depart(String name, int salary, String department) {
 		super(name, salary);

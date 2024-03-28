@@ -2,6 +2,7 @@ package com.javaex.ex04;
 
 public class User {
 	
+	
 	protected String id;
 	protected String password;
 	protected String name;
@@ -35,7 +36,7 @@ public class User {
 		this.name=name;
 	}
 	
-	public void showInfo(String id, String password, String name) {
+	public void showInfo() {
 		System.out.printf("#아이디:%s, #패스워드:%s, #이름:%s", id,password,name);
 		
 		

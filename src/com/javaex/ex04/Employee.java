@@ -23,10 +23,10 @@ public class Employee extends User {
 	public void setSalary(int salary) {
 		this.salary=salary;
 	}
-	
+	@Override
 	public void showInfo() {
-		super.showInfo(id, password, name);
-		System.out.printf(", #월급: %d%n",salary);
+		super.showInfo();
+		System.out.printf(", #월급: %d",salary);
 	}
 	
 	

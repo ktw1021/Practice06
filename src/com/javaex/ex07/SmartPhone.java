@@ -7,7 +7,7 @@ public class SmartPhone extends MusicPhone {
         	playApp();
         }
         else if (str.equals("음악")) {
-        	super.execute(str);
+        	appPlayMusic();
         }
         else if (str.equals("통화")) {
         	super.execute(str);
@@ -15,7 +15,11 @@ public class SmartPhone extends MusicPhone {
     }
  
     public void playApp() {
-    	System.out.println("앱 실행");
+    	System.out.println("앱실행");
+    }
+    
+    public void appPlayMusic() {
+    	System.out.println("다운로드해서 음악재생");
     }
     
     

@@ -22,10 +22,10 @@ public class Customer extends User {
 	public void setPoint(int point) {
 		this.point=point;
 	}
-	
+	@Override
 	public void showInfo() {
-		super.showInfo(id, password, name);
-		System.out.printf(", #포인트:%d%n", point);
+		super.showInfo();
+		System.out.printf(", #포인트:%d", point);
 	}
 	
 
